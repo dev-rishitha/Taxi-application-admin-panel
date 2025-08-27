@@ -1,0 +1,31 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Manufacturer;
+use App\Models\User;
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    public function run(): void
+    {
+
+        User::factory()->create([
+            'name' => 'Test User',
+            'email' => 'test@example.com',
+        ]);
+
+        $this->call([
+            AdminSeeder::class,
+            CustomerSeeder::class,
+            ManufacturerSeeder::class,
+            DriverSeeder::class,
+            VehicleModelSeeder::class,
+            LocationSeeder::class,
+            VehicleTypeSeeder::class,
+            FareSeeder::class
+        ]);
+    }
+}
