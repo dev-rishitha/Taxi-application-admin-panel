@@ -52,22 +52,22 @@ DEVELOPMENT TOOLS ->
 
 STEPS -> 
 
-git clone https://github.com/dev-rishitha/Taxi-application-admin-panel.git
-
-cd Taxi-application-admin-panel
-
-composer install
-
-cp .env.example .env
-
-php artisan key:generate
-
-php artisan migrate
-
-php artisan db:seed
-
-npm install
-
-npm run dev
-
-php artisan serve
+    git clone https://github.com/dev-rishitha/Taxi-application-admin-panel.git
+    
+    cd Taxi-application-admin-panel
+    
+    composer install
+    
+    cp .env.example .env
+    
+    php artisan key:generate
+    
+    php artisan migrate
+    
+    php artisan db:seed
+    
+    npm install
+    
+    npm run dev
+    
+    php artisan serve
